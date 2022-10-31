@@ -35,3 +35,17 @@
         align-items: flex-end;
     }
 }
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        &__official {
+            padding-top: 10px;
+        }
+        &__contacts {
+            align-items: center;
+            padding-top: 15px;
+            gap: 15px;
+        }
+    }
+}

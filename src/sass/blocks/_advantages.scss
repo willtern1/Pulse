@@ -1,0 +1,63 @@
+.advantages {
+    background-color: #F6F6F6;
+    min-height: 470px;
+    &__header { 
+        margin: 0;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: #0D0D0D;
+        padding-top: 71px;
+    }
+    &__blocks {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 68px;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:nth-child(1) {
+            width: 269px;
+        }
+        &:nth-child(2) {
+            width: 273px;
+        }
+        &:nth-child(3) {
+            width: 277px;
+        }
+    }
+    &__image {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 35px;
+    }
+    &__subheader {
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #0D0D0D;
+        margin: 0 0 20px 0;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #0D0D0D;
+        margin: 0;
+        span {
+            color: $main-color
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .advantages__blocks {
+        flex-wrap: wrap;
+    }
+}
