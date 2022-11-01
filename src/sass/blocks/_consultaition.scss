@@ -1,0 +1,20 @@
+.consultaition {
+    min-height: 680px;
+    padding: 100px 0 108px 0;
+    background: url(../../img/bg/bg-2.jpg) center center/cover no-repeat;
+    &__descr {
+        padding-top: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 1000px) {
+    .consultaition {
+        &__descr {
+            text-align: center;
+        }
+    }
+}
