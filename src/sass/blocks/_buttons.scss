@@ -20,6 +20,14 @@
         height: 58px;
         font-size: 16px;
     }
+    &_mini {
+        width: 131px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
 
 @media (max-width: 600px) {
