@@ -1,0 +1,71 @@
+.reviews {
+    padding-bottom: 48px;
+    .title {
+        padding-top: 0;
+    }
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        gap: 60px;
+    }
+    &__block {
+        display: flex;
+        gap: 61px;
+    }
+    &__img {
+        display: block;
+        width: 169px;
+        height: 169px;
+        border-radius: 50%;
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+    &__author {
+        font-weight: 700;
+        font-size: 18px;
+        align-items: flex-end;
+        color: #0D0D0D;
+        margin: 0;
+
+    }
+    &__marathon-number {
+        font-weight: 500;
+        font-size: 14px;
+        align-items: flex-end;
+        color: #646464;
+        margin: 0;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: flex-end;
+        color: #0D0D0D;
+    }
+}
+
+@media (max-width: 800px) {
+    .reviews {
+        &__block {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__descr {
+            align-items: center;
+        }
+        &__info {
+            align-items: center;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+}
