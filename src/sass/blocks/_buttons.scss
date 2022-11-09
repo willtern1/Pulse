@@ -27,6 +27,11 @@
         font-size: 14px;
         text-align: center;
         text-transform: uppercase;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 3px 3px 20px #c70101;
+            border: none;
+        }
     }
 }
 
