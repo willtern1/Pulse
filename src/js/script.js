@@ -33,7 +33,7 @@ $(document).ready(function () {
 
             })
         });
-    };
+    }
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
@@ -89,6 +89,26 @@ $(document).ready(function () {
     validateForms('#consultation form')
     //Маска для телефоны
     $('input[name=phone]').mask("+7 (999) 999-99-99");
+    //сабмит на почту
+    $('form').submit(function (e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url:"./mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
 
 
