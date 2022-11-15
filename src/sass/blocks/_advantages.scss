@@ -27,6 +27,12 @@
         width: 70px;
         height: 70px;
         margin-bottom: 35px;
+        &_animated {
+            animation: heartbeat 1.5s ease-out infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
     &__subheader {
         font-weight: 700;
